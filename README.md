@@ -23,6 +23,8 @@ hotel_recommendation/
 └── requirements.txt               # 依赖包列表
 ```
 
+···
+
 
 ## 环境依赖
 
@@ -41,7 +43,9 @@ nltk
 ### 建议使用虚拟环境安装依赖：
 
 python -m venv venv
+
 source venv/bin/activate  # macOS/Linux
+
 venv\Scripts\activate     # Windows
 
 pip install -r requirements.txt
@@ -61,6 +65,7 @@ nltk
 ## 使用说明
 
 ### 1. 数据准备
+
 请确保 Seattle_Hotels.csv 文件位于 目录下。文件包含酒店的基本信息和描述文本。
 
 ### 2.基础版本（hotel_rec.py）
@@ -97,7 +102,9 @@ python src/hotel_rec.py
 
 
 import nltk
+
 nltk.download('stopwords')
+
 如果网络无法访问，可以手动下载并设置 nltk.data.path。
 
 运行：
@@ -105,6 +112,7 @@ nltk.download('stopwords')
 python src/hotel_rec_nltk.py
 
 ## 代码结构说明
+
 hotel_rec.py
 
 读取数据
@@ -141,4 +149,5 @@ TF-IDF特征提取与相似度计算同基础版本
 在代码中指定路径：
 
 import nltk
+
 nltk.data.path.append('/path/to/your/nltk_data')
