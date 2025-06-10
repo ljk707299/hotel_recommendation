@@ -14,11 +14,17 @@ hotel_rec_nltk.py：改进版本，加入了NLTK的停用词处理，文本清�
 ## 目录结构示例
 
 hotel_recommendation/
+
 ├── src/
+|
 │   ├── hotel_rec.py                # 基础版本代码
+|
 │   └── hotel_rec_nltk.py           # 使用NLTK的改进版代码
-    └── Seattle_Hotels.csv          # 酒店数据CSV文件
+|
+|   └── Seattle_Hotels.csv          # 酒店数据CSV文件
+|
 ├── README.md
+|
 └── requirements.txt                # 依赖包列表
 
 ## 环境依赖
@@ -45,13 +51,14 @@ pip install -r requirements.txt
 
 requirements.txt 示例：
 
-nginx
-复制
-编辑
 pandas
+
 numpy
+
 matplotlib
+
 scikit-learn
+
 nltk
 
 ## 使用说明
